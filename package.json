@@ -1,0 +1,19 @@
+{
+  "name": "lts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "discord.js": "^14.15.3",
+    "ds-core": "file:libs/ds-core",
+    "ds-init": "file:libs/ds-init",
+    "node-cache": "^5.1.2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "token": "",
+    "clientId": "",
+    "guildId": "",
+    "update": {
+        "app": false,
+        "modules": false,
+        "commands": false
+    },
+    "ws": {
+        "host": "ws://localhost:3000",
+        "connect": 5,
+        "reconnect": 30
+    }
+}
