@@ -38,14 +38,6 @@ class WebSocketClient {
         client.on('open', (server) => {
             clearTimeout(this.timeoutId);
             Core.log('Соединение с сервером установлено');
-            Client.on('messageCreate', (message) => {
-                if (message.author.bot) return;
-                if (message.channel.id == '1257062756033757304') {
-                    client.send(JSON.stringify({
-                        msg: message.content
-                    }));
-                }
-            });
         })
     }
     #onMessage() {
