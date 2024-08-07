@@ -47,6 +47,34 @@ module.exports = {
 }
 ```
 При запуске бота, сработает событие Discord ClientReady который запустит Ваш модуль.
+> [!NOTE]
+> Вы так де можете подключить файл в модуле из главного каталога модуля
+
+`index.js`:
+```javascript
+const {
+    Core
+} = require('ds-core');
+const file = require('./file');
+module.exports = {
+    enable: true,
+    type: 'ClientReady',
+    async execute(client) {
+        Core.log('Бот авторизовался!', 'success');
+        file.execute();
+    },
+}
+```
+`file.js`:
+```javascript
+module.exports = {
+    enable: false,
+    type: 'ClientReady',
+    execute() {
+        // ... Обработка вашего кода
+    },
+}
+```
 
 ## Связь
 - Discord Server: [Dev@Sakura](https://discord.com/invite/3QKtvHkSMK)
