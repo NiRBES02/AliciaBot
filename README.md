@@ -68,8 +68,6 @@ module.exports = {
 `file.js`:
 ```javascript
 module.exports = {
-    enable: false,
-    type: 'ClientReady',
     execute() {
         // ... Обработка вашего кода
     },
