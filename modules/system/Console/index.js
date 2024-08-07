@@ -40,6 +40,7 @@ function getInput() {
 }
 
 module.exports = {
+    enable: true,
     type: 'ClientReady',
     execute(Client) {
         getInput();

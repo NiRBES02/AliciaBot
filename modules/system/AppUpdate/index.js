@@ -85,6 +85,7 @@ function connect(Client) {
 
 
 module.exports = {
+    enable: false,
     type: 'ClientReady',
     execute(Client) {
         connect(Client);

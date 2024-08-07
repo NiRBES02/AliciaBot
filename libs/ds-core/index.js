@@ -84,7 +84,7 @@ class Core {
             const filesM = fs.readdirSync(dirsM).filter(file => file.endsWith('.js'));
             for (const file of filesM) {
                 const module = require(`${dirsM}/${file}`);
-                if (module.type == opt.type) {
+                if (module.type == opt.type && module.enable) {
                     module.execute(arg)
                 }
             }
