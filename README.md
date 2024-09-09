@@ -1,3 +1,8 @@
+> [!CAUTION]
+> DEPRECATED
+> Expect 2.x
+
+
 # AliciaBot
 Оболочка бота для твоего сервера.
 
